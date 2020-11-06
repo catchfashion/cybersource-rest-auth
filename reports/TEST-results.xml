@@ -1,0 +1,104 @@
+<testExecutions version="1">
+<file path="test.js">
+<testCase name="merchantConfigTest: should return authenticationType as JWT" duration="5"/>
+<testCase name="merchantConfigTest: should return merchantId as testrest" duration="0"/>
+<testCase name="merchantConfigTest: should return requestHost for sandbox" duration="1"/>
+<testCase name="merchantConfigTest: should return requestHost for production" duration="0"/>
+<testCase name="merchantConfigTest: should return requestHost for sandbox" duration="0"/>
+<testCase name="merchantConfigTest: should return all the merchantConfig properties" duration="2"/>
+<testCase name="merchantConfigTest: should return jwt fallback values" duration="1"/>
+<testCase name="merchantConfigTest: should return keyAliyas as merchantID" duration="0"/>
+<testCase name="merchantConfigTest: should return default enableLog" duration="0"/>
+<testCase name="merchantConfigTest: should return error, invalid Authentication Type" duration="3"/>
+<testCase name="merchantConfigTest: should return error, invalid RUNTIME ENVIRONMENT" duration="0"/>
+<testCase name="merchantConfigTest: should return error, MerchantID is mandatory" duration="1"/>
+<testCase name="merchantConfigTest: should return error, invalid type for Authentication Type" duration="0"/>
+<testCase name="merchantConfigTest: should return error, Authentication Type is mandatory" duration="1"/>
+<testCase name="merchantConfigTest: should return error, MerchantKeyId is Mandatory" duration="1"/>
+<testCase name="merchantConfigTest: should return error, MerchantSecretKey is Mandatory" duration="0"/>
+<testCase name="merchantConfigTest: should return merchantConfig object" duration="0"/>
+<testCase name="digestGeneratorTest: should return digest" duration="3"/>
+<testCase name="loggerTest: should check log rotation, Return logger object " duration="2"/>
+<testCase name="loggerTest: should return loggerObject" duration="1"/>
+<testCase name="cacheTest: should return certificate not from cache" duration="1">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Context.<anonymous> (tests/com/cybersource/authentication/util/cacheTest.js:10:33)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="propertiesUtilTest: should return proxy" duration="1"/>
+<testCase name="propertiesUtilTest: should not return proxy" duration="0"/>
+<testCase name="jwtSigTokenTest: should return jwt encoded token" duration="2">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Object.getRSAPrivateKey (src/com/cybersource/authentication/jwt/KeyCertificateGenerator.js:25:25)
+    at Object.exports.getToken (src/com/cybersource/authentication/jwt/JWTSigToken.js:20:44)
+    at Context.<anonymous> (tests/com/cybersource/authentication/jwt/jwtSigTokenTest.js:17:29)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="jwtSigTokenTest: should return error, Invalid requestType" duration="1">
+<failure message="expected [Function] to throw error including &apos;Entered Request Type should be (GET/POST/PUT/DELETE)&apos; but got &apos;File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12&apos;"><![CDATA[AssertionError: expected [Function] to throw error including 'Entered Request Type should be (GET/POST/PUT/DELETE)' but got 'File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12'
+    at Context.<anonymous> (tests/com/cybersource/authentication/jwt/jwtSigTokenTest.js:26:14)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="keyCertificateGeneratorTest: should return certificate in pem format" duration="0">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Object.getX509CertificateInPem (src/com/cybersource/authentication/jwt/KeyCertificateGenerator.js:13:25)
+    at Context.<anonymous> (tests/com/cybersource/authentication/jwt/keyCertificateGeneratorTest.js:10:51)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="keyCertificateGeneratorTest: should return RSA Private key" duration="0">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Object.getRSAPrivateKey (src/com/cybersource/authentication/jwt/KeyCertificateGenerator.js:25:25)
+    at Context.<anonymous> (tests/com/cybersource/authentication/jwt/keyCertificateGeneratorTest.js:17:50)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="keyCertificateGeneratorTest: should return public key in pem format" duration="0">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Object.getPublicKeyInPem (src/com/cybersource/authentication/jwt/KeyCertificateGenerator.js:36:25)
+    at Context.<anonymous> (tests/com/cybersource/authentication/jwt/keyCertificateGeneratorTest.js:24:49)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="httpSigTokenTest: should return http signature header for post method" duration="5"/>
+<testCase name="httpSigTokenTest: should return http signature header for get method" duration="0"/>
+<testCase name="httpSigTokenTest: should return http signature header for put method" duration="0"/>
+<testCase name="httpSigTokenTest: should return http signature header for delete method" duration="0"/>
+<testCase name="signatureParameterGeneratorTest: should return http signature for post method" duration="0"/>
+<testCase name="signatureParameterGeneratorTest: should return http signature for get method" duration="1"/>
+<testCase name="signatureParameterGeneratorTest: should return http signature for put method" duration="0"/>
+<testCase name="signatureParameterGeneratorTest: should return http signature for delete method" duration="0"/>
+<testCase name="authorizationTest: should return token for JWT" duration="1">
+<failure message="File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12"><![CDATA[Error: File not found, Re-Enter path/file name, Entered path/file name :: /Users/odyss009/works/AuthenticationSDK/tests/resource/testrest.p12
+    at Object.exports.AuthException (src/com/cybersource/authentication/util/ApiException.js:13:15)
+    at Object.exports.fetchCachedCertificate (src/com/cybersource/authentication/util/Cache.js:41:22)
+    at Object.getRSAPrivateKey (src/com/cybersource/authentication/jwt/KeyCertificateGenerator.js:25:25)
+    at Object.exports.getToken (src/com/cybersource/authentication/jwt/JWTSigToken.js:20:44)
+    at Object.exports.getToken (src/com/cybersource/authentication/core/Authorization.js:23:36)
+    at Context.<anonymous> (tests/com/cybersource/authentication/core/authorizationTest.js:13:35)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+</testCase>
+<testCase name="authorizationTest: should return token for http" duration="0"/>
+<testCase name="authorizationTest: should return error" duration="0"/>
+<testCase name="apiExceptionTest: should return error object" duration="5"/>
+<testCase name="apiExceptionTest: should return error object" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should return statusInformation" duration="0"/>
+<testCase name="utilityTest: should not return statusInformation" duration="0"/>
+<testCase name="utilityTest: should not return statusInformation" duration="0"/>
+<testCase name="utilityTest: should not return statusInformation" duration="0"/>
+<testCase name="utilityTest: should not return statusInformation" duration="0"/>
+<testCase name="utilityTest: should not return statusInformation" duration="0"/>
+</file>
+</testExecutions>

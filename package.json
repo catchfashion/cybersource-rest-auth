@@ -1,0 +1,59 @@
+{
+  "_from": "cybersource-rest-auth@0.0.7",
+  "_id": "cybersource-rest-auth@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-7p5GfpNNiB9tUt/8nuUqNAfYUBQfwQxWg09p7WEvcYMqBLFOLcf2zDNFhLkLgucN/M/S6mlM1qeCdbVOkpJ9FQ==",
+  "_location": "/cybersource-rest-auth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cybersource-rest-auth@0.0.7",
+    "name": "cybersource-rest-auth",
+    "escapedName": "cybersource-rest-auth",
+    "rawSpec": "0.0.7",
+    "saveSpec": null,
+    "fetchSpec": "0.0.7"
+  },
+  "_requiredBy": [
+    "/cybersource-rest-client"
+  ],
+  "_resolved": "https://registry.npmjs.org/cybersource-rest-auth/-/cybersource-rest-auth-0.0.7.tgz",
+  "_shasum": "28f8cbb3365141576894aa04c53533b0d6cd600a",
+  "_spec": "cybersource-rest-auth@0.0.7",
+  "_where": "/Users/odyss009/test/cybersource-test/node_modules/cybersource-rest-client",
+  "author": {
+    "name": "developer@cybersource.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "jwt-simple": "^0.5.1",
+    "memory-cache": "^0.2.0",
+    "node-forge": "^0.7.5",
+    "promise": "^8.0.1",
+    "winston": "^2.4.2"
+  },
+  "deprecated": false,
+  "description": "CyberSource SDK for authenticating to the REST API",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mocha-sonarqube-reporter": "^1.0.1",
+    "nyc": "^12.0.2",
+    "sonar-scanner": "^3.1.0"
+  },
+  "keywords": [
+    "nodeJS"
+  ],
+  "license": "ISC",
+  "main": "src/index.js",
+  "name": "@catchfashion/cybersource-rest-auth",
+  "scripts": {
+    "build-test": "nyc --reporter=lcov mocha",
+    "sonar-scanner": "sonar-scanner",
+    "test": "mocha --reporter mocha-sonarqube-reporter test --reporter-options output=reports/TEST-results.xml"
+  },
+  "version": "0.0.8"
+}
