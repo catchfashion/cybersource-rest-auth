@@ -32,5 +32,5 @@
     "sonar-scanner": "sonar-scanner",
     "test": "mocha --reporter mocha-sonarqube-reporter test --reporter-options output=reports/TEST-results.xml"
   },
-  "version": "0.0.8"
+  "version": "0.0.9"
 }
