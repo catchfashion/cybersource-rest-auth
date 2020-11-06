@@ -1,27 +1,4 @@
 {
-  "_from": "cybersource-rest-auth@0.0.7",
-  "_id": "cybersource-rest-auth@0.0.7",
-  "_inBundle": false,
-  "_integrity": "sha512-7p5GfpNNiB9tUt/8nuUqNAfYUBQfwQxWg09p7WEvcYMqBLFOLcf2zDNFhLkLgucN/M/S6mlM1qeCdbVOkpJ9FQ==",
-  "_location": "/cybersource-rest-auth",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cybersource-rest-auth@0.0.7",
-    "name": "cybersource-rest-auth",
-    "escapedName": "cybersource-rest-auth",
-    "rawSpec": "0.0.7",
-    "saveSpec": null,
-    "fetchSpec": "0.0.7"
-  },
-  "_requiredBy": [
-    "/cybersource-rest-client"
-  ],
-  "_resolved": "https://registry.npmjs.org/cybersource-rest-auth/-/cybersource-rest-auth-0.0.7.tgz",
-  "_shasum": "28f8cbb3365141576894aa04c53533b0d6cd600a",
-  "_spec": "cybersource-rest-auth@0.0.7",
-  "_where": "/Users/odyss009/test/cybersource-test/node_modules/cybersource-rest-client",
   "author": {
     "name": "developer@cybersource.com"
   },
